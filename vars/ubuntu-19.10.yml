@@ -17,11 +17,11 @@
 _apt:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
+  - { state: "latest", name: "cmake" }
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "libcap-dev" }
   - { state: "latest", name: "libseccomp-dev" }
   - { state: "latest", name: "libsystemd-dev" }
   - { state: "latest", name: "libtool" }
-  - { state: "latest", name: "libyajl-dev" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "pkgconf" }

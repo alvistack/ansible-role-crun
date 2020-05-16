@@ -17,12 +17,12 @@
 _zypper:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
+  - { state: "latest", name: "cmake" }
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "gettext" }
   - { state: "latest", name: "glibc-static" }
   - { state: "latest", name: "libcap-devel" }
   - { state: "latest", name: "libseccomp-devel" }
   - { state: "latest", name: "libtool" }
-  - { state: "latest", name: "libyajl-devel" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }

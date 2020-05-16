@@ -4,6 +4,9 @@
 
 ### Major Changes
 
+  - Compile with `--disable-systemd`
+  - Install YAJL from source
+
 ## 4.3.0 - 2020-05-11
 
   - Ininitial release for Ansible 2.9 or higher

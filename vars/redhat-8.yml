@@ -17,6 +17,7 @@
 _yum:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
+  - { state: "latest", name: "cmake" }
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "gettext" }
   - { state: "latest", name: "glibc-static", enablerepo: "codeready-builder-for-rhel-8-x86_64-rpms" }
@@ -25,4 +26,3 @@ _yum:
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }
-  - { state: "latest", name: "yajl-devel", enablerepo: "codeready-builder-for-rhel-8-x86_64-rpms" }
