@@ -26,3 +26,5 @@ _yum:
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }
+  - { state: "present", name: "http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/yajl-2.1.0-10.el8.x86_64.rpm" }
+  - { state: "present", name: "http://mirror.centos.org/centos/8/PowerTools/x86_64/os/Packages/yajl-devel-2.1.0-10.el8.x86_64.rpm" }

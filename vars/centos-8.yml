@@ -26,3 +26,5 @@ _yum:
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }
+  - { state: "latest", name: "yajl" }
+  - { state: "latest", name: "yajl-devel", enablerepo: "PowerTools" }

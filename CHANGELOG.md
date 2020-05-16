@@ -5,7 +5,6 @@
 ### Major Changes
 
   - Compile with `--disable-systemd`
-  - Install YAJL from source
 
 ## 4.3.0 - 2020-05-11
 

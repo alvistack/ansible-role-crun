@@ -24,5 +24,7 @@ _zypper:
   - { state: "latest", name: "libcap-devel" }
   - { state: "latest", name: "libseccomp-devel" }
   - { state: "latest", name: "libtool" }
+  - { state: "latest", name: "libyajl-devel" }
+  - { state: "latest", name: "libyajl2" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }
