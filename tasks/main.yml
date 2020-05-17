@@ -83,7 +83,7 @@
       && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
       && cd $TMP_DIR \
       && ./autogen.sh \
-      && ./configure --disable-systemd \
+      && (./configure || ./configure --disable-systemd) \
       && make \
       && make install \
       && rm -rf $TMP_DIR
