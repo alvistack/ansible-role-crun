@@ -21,6 +21,7 @@ _apt:
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "libcap-dev" }
   - { state: "latest", name: "libseccomp-dev" }
+  - { state: "latest", name: "libselinux-dev" }
   - { state: "latest", name: "libsystemd-dev" }
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "libyajl-dev" }

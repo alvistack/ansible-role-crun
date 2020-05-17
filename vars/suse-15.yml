@@ -23,6 +23,7 @@ _zypper:
   - { state: "latest", name: "glibc-static" }
   - { state: "latest", name: "libcap-devel" }
   - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "libyajl-devel" }
   - { state: "latest", name: "libyajl2" }

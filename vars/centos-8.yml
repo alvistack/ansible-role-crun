@@ -23,6 +23,7 @@ _yum:
   - { state: "latest", name: "glibc-static", enablerepo: "PowerTools" }
   - { state: "latest", name: "libcap-devel" }
   - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "systemd-devel" }
