@@ -18,6 +18,7 @@ _apt:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
   - { state: "latest", name: "cmake" }
+  - { state: "latest", name: "curl" }
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "libcap-dev" }
   - { state: "latest", name: "libseccomp-dev" }
@@ -28,3 +29,4 @@ _apt:
   - { state: "latest", name: "libyajl2" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "pkg-config" }
+  - { state: "latest", name: "systemd" }

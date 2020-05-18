@@ -84,7 +84,7 @@
       && cd $TMP_DIR \
       && ./autogen.sh \
       && export CFLAGS="$(pkg-config --cflags libseccomp)" \
-      && (./configure || ./configure --disable-systemd) \
+      && ./configure \
       && make \
       && make install \
       && rm -rf $TMP_DIR
