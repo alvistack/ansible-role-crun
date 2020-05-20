@@ -14,15 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key: []
+
+_yum_repository: []
+
 _yum:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
+  - { state: "latest", name: "cmake" }
+  - { state: "latest", name: "curl" }
   - { state: "latest", name: "gcc" }
   - { state: "latest", name: "gettext" }
   - { state: "latest", name: "glibc-static", enablerepo: "codeready-builder-for-rhel-8-x86_64-rpms" }
   - { state: "latest", name: "libcap-devel" }
   - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
+  - { state: "latest", name: "systemd" }
   - { state: "latest", name: "systemd-devel" }
+  - { state: "latest", name: "yajl" }
   - { state: "latest", name: "yajl-devel", enablerepo: "codeready-builder-for-rhel-8-x86_64-rpms" }

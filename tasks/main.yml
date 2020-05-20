@@ -83,6 +83,7 @@
       && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
       && cd $TMP_DIR \
       && ./autogen.sh \
+      && export CFLAGS="$(pkg-config --cflags libseccomp)" \
       && ./configure \
       && make \
       && make install \

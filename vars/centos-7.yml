@@ -14,4 +14,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_yum: []
+_rpm_key:
+  - key: "https://download.copr.fedorainfracloud.org/results/jsynacek/systemd-backports-for-centos-7/pubkey.gpg"
+    fingerprint: "9A0B7E8D3B82BD3D33DE06C40894716641F6EB95"
+    state: "present"
+
+_yum_repository:
+  - file: "jsynacek-systemd-centos-7"
+    name: "copr:copr.fedorainfracloud.org:jsynacek:systemd-backports-for-centos-7"
+    description: "Copr repo for systemd-backports-for-centos-7 owned by jsynacek"
+    baseurl: "https://download.copr.fedorainfracloud.org/results/jsynacek/systemd-backports-for-centos-7/epel-7-$basearch/"
+    enabled: true
+    priority: "2"
+    gpgcheck: true
+    gpgkey: "https://download.copr.fedorainfracloud.org/results/jsynacek/systemd-backports-for-centos-7/pubkey.gpg"
+    state: "present"
+
+_yum:
+  - { state: "latest", name: "autoconf" }
+  - { state: "latest", name: "automake" }
+  - { state: "latest", name: "cmake" }
+  - { state: "latest", name: "curl" }
+  - { state: "latest", name: "gcc" }
+  - { state: "latest", name: "gettext" }
+  - { state: "latest", name: "glibc-static" }
+  - { state: "latest", name: "libcap-devel" }
+  - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
+  - { state: "latest", name: "libtool" }
+  - { state: "latest", name: "make" }
+  - { state: "latest", name: "systemd" }
+  - { state: "latest", name: "systemd-devel" }
+  - { state: "present", name: "http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/yajl-2.1.0-10.el8.x86_64.rpm" }
+  - { state: "present", name: "http://mirror.centos.org/centos/8/PowerTools/x86_64/os/Packages/yajl-devel-2.1.0-10.el8.x86_64.rpm" }
