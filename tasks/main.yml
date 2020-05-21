@@ -82,7 +82,7 @@
     TMP_DIR="$(mktemp -d)" \
       && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
       && cd $TMP_DIR \
-      && git clone -b master https://github.com/containers/crun crun-master \
+      && git clone --branch master --depth 1 https://github.com/containers/crun crun-master \
       && rm -rf nix \
       && mv crun-master/nix . \
       && rm -rf crun-master \
