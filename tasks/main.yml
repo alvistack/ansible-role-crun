@@ -82,11 +82,15 @@
     TMP_DIR="$(mktemp -d)" \
       && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
       && cd $TMP_DIR \
+      && git clone -b master https://github.com/containers/crun crun-master \
+      && rm -rf nix \
+      && mv crun-master/nix . \
+      && rm -rf crun-master \
       && ./autogen.sh \
-      && export CFLAGS="$(pkg-config --cflags libseccomp)" \
-      && ./configure \
-      && make \
-      && make install \
+      && nix build -f nix/ \
+      && chown -Rf root:root result*/bin/* \
+      && chmod 0755 result*/bin/* \
+      && mv result*/bin/* /usr/local/bin/ \
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"

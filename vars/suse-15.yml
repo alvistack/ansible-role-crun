@@ -17,17 +17,6 @@
 _zypper:
   - { state: "latest", name: "autoconf" }
   - { state: "latest", name: "automake" }
-  - { state: "latest", name: "cmake" }
-  - { state: "latest", name: "curl" }
-  - { state: "latest", name: "gcc" }
-  - { state: "latest", name: "gettext" }
-  - { state: "latest", name: "glibc-static" }
-  - { state: "latest", name: "libcap-devel" }
-  - { state: "latest", name: "libseccomp-devel" }
-  - { state: "latest", name: "libselinux-devel" }
   - { state: "latest", name: "libtool" }
-  - { state: "latest", name: "libyajl-devel" }
-  - { state: "latest", name: "libyajl2" }
   - { state: "latest", name: "make" }
-  - { state: "latest", name: "systemd" }
-  - { state: "latest", name: "systemd-devel" }
+  - { state: "latest", name: "pkg-config" }
