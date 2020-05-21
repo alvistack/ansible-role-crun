@@ -89,6 +89,7 @@
       && nix build -f nix/ \
       && chown -Rf root:root result*/bin/* \
       && chmod 0755 result*/bin/* \
+      && for i in result*/bin/*; do mv "$i" "${i/-static/}"; done || true \
       && mv result*/bin/* /usr/local/bin/ \
       && rm -rf $TMP_DIR
   args:
