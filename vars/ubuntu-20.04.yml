@@ -15,8 +15,4 @@
 # limitations under the License.
 
 _apt:
-  - { state: "latest", name: "autoconf" }
-  - { state: "latest", name: "automake" }
-  - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
-  - { state: "latest", name: "pkg-config" }

@@ -86,7 +86,6 @@
       && rm -rf nix \
       && mv crun-master/nix . \
       && rm -rf crun-master \
-      && ./autogen.sh \
       && nix build -f nix/ \
       && chown -Rf root:root result*/bin/* \
       && chmod 0755 result*/bin/* \
