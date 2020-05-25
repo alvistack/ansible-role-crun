@@ -79,17 +79,14 @@
     PATH: "/usr/local/bin:/usr/local/bin:/usr/bin:/usr/bin:/bin:/bin"
   shell: |
     set -o pipefail
+    source /etc/profile
     TMP_DIR="$(mktemp -d)" \
       && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
       && cd $TMP_DIR \
-      && git clone --branch master --depth 1 https://github.com/containers/crun crun-master \
-      && rm -rf nix \
-      && mv crun-master/nix . \
-      && rm -rf crun-master \
+      {% if crun_download.patch %}&& curl -skL {{ crun_download.patch }} | patch -p1{% endif %}
       && nix build -f nix/ \
       && chown -Rf root:root result*/bin/* \
       && chmod 0755 result*/bin/* \
-      && for i in result*/bin/*; do mv "$i" "${i/-static/}"; done || true \
       && mv result*/bin/* /usr/local/bin/ \
       && rm -rf $TMP_DIR
   args:

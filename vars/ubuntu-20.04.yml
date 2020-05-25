@@ -19,4 +19,5 @@ _apt:
   - { state: "latest", name: "automake" }
   - { state: "latest", name: "libtool" }
   - { state: "latest", name: "make" }
+  - { state: "latest", name: "patch" }
   - { state: "latest", name: "pkg-config" }
