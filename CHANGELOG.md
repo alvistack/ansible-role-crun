@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-  - Compile static binary with Nix
+  - Install with static binary archive
 
 ## 4.3.0 - 2020-05-11
 

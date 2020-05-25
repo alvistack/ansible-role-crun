@@ -16,7 +16,6 @@
 
 _crun_download:
   "0.13":
-    url: "https://github.com/containers/crun/releases/download/0.13/crun-0.13.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.13.tar.gz"
-    checksum: "sha1:03054b35e16f62be15fa6e62e669a330100fe60c"
-    patch: "https://github.com/containers/crun/compare/0.13...alvistack:0.13-nix.patch"
+    url: "https://github.com/containers/crun/releases/download/0.13/crun-0.13-static-x86_64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.13-static-x86_64"
+    checksum: "sha1:41214f8eb3a6438be259e731b60a883037b7e90d"
