@@ -27,7 +27,3 @@ roles:
   - name: python
     src: https://github.com/alvistack/ansible-role-python
     version: develop
-
-  - name: git
-    src: https://github.com/alvistack/ansible-role-git
-    version: develop

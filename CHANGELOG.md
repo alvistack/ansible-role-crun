@@ -1,10 +1,14 @@
 # Ansible Role for crun
 
-## 4.4.0 - TBC
+## 4.5.0 - TBC
 
 ### Major Changes
 
-  - Compile with `--disable-systemd`
+## 4.4.0 - 2020-06-04
+
+### Major Changes
+
+  - Install with static binary archive
 
 ## 4.3.0 - 2020-05-11
 

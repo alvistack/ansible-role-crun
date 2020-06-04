@@ -13,20 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_apt:
-  - { state: "latest", name: "autoconf" }
-  - { state: "latest", name: "automake" }
-  - { state: "latest", name: "cmake" }
-  - { state: "latest", name: "curl" }
-  - { state: "latest", name: "gcc" }
-  - { state: "latest", name: "libcap-dev" }
-  - { state: "latest", name: "libseccomp-dev" }
-  - { state: "latest", name: "libselinux-dev" }
-  - { state: "latest", name: "libsystemd-dev" }
-  - { state: "latest", name: "libtool" }
-  - { state: "latest", name: "libyajl-dev" }
-  - { state: "latest", name: "libyajl2" }
-  - { state: "latest", name: "make" }
-  - { state: "latest", name: "pkg-config" }
-  - { state: "latest", name: "systemd" }

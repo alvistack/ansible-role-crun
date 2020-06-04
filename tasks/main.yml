@@ -74,25 +74,19 @@
   until: get_url_result is succeeded
   tags: crun
 
-- name: build package
-  environment:
-    PATH: "/usr/local/bin:/usr/local/bin:/usr/bin:/usr/bin:/bin:/bin"
+- name: unarchive package
   shell: |
     set -o pipefail
+    cd /usr/local/bin
     TMP_DIR="$(mktemp -d)" \
-      && tar -zx -C $TMP_DIR -f {{ crun_download.dest }} --strip-components=1 \
-      && cd $TMP_DIR \
-      && ./autogen.sh \
-      && export CFLAGS="$(pkg-config --cflags libseccomp)" \
-      && ./configure \
-      && make \
-      && make install \
+      && cp {{ crun_download.dest }} $TMP_DIR/crun \
+      && chown root:root $TMP_DIR/crun \
+      && chmod 0755 $TMP_DIR/crun \
+      && mv $TMP_DIR/crun . \
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  register: result
-  until: result is succeeded
   tags: crun
 
 - name: prepare files
