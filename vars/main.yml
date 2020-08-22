@@ -18,12 +18,12 @@ _crun_download:
   "0.14.1":
     url: "https://github.com/alvistack/crun/releases/download/0.14.1/crun-0.14.1-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.14.1-linux-amd64"
-    checksum: "sha1:7cb377cf37e18fc0fb46bb3c34d1284633968fd2"
+    checksum: "sha1:e701341ef996eb2770895b40e71d4916d125c01c"
   "0.14":
     url: "https://github.com/alvistack/crun/releases/download/0.14/crun-0.14-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.14-linux-amd64"
-    checksum: "sha1:a2fa360d78f475f2bac2b29bb70e2d180de91348"
+    checksum: "sha1:478b7418da1dfb1c12c9d105080ac57e99a2065a"
   "0.13":
     url: "https://github.com/alvistack/crun/releases/download/0.13/crun-0.13-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.13-linux-amd64"
-    checksum: "sha1:fe60d09fad293d1604e0031395c44cf04a7fca05"
+    checksum: "sha1:232708c13c544aa120ae04b99b2339d6e385766c"
