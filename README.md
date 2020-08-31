@@ -1,7 +1,7 @@
 # Ansible Role for crun
 
 [![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-crun.svg)](https://travis-ci.com/alvistack/ansible-role-crun)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-crun.svg)](https://github.com/alvistack/ansible-role-crun)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-crun.svg)](https://github.com/alvistack/ansible-role-crun/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-crun.svg)](https://github.com/alvistack/ansible-role-crun/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.crun-blue.svg)](https://galaxy.ansible.com/alvistack/crun)
 
