@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _crun_download:
+  "0.15":
+    url: "https://github.com/alvistack/containers-crun/releases/download/0.15/crun-0.15-linux-amd64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.15-linux-amd64"
+    checksum: "sha1:1372cbd5991a50d996dd72e08081d3d8b6ea09a2"
   "0.14.1":
     url: "https://github.com/alvistack/containers-crun/releases/download/0.14.1/crun-0.14.1-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.14.1-linux-amd64"
@@ -23,7 +27,3 @@ _crun_download:
     url: "https://github.com/alvistack/containers-crun/releases/download/0.14/crun-0.14-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.14-linux-amd64"
     checksum: "sha1:478b7418da1dfb1c12c9d105080ac57e99a2065a"
-  "0.13":
-    url: "https://github.com/alvistack/containers-crun/releases/download/0.13/crun-0.13-linux-amd64"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.13-linux-amd64"
-    checksum: "sha1:232708c13c544aa120ae04b99b2339d6e385766c"
