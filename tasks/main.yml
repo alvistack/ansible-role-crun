@@ -16,7 +16,6 @@
 
 - name: include default variables
   include_vars: "../vars/main.yml"
-  tags: crun
 
 - name: include release specific variables
   include_vars: "{{ lookup('first_found', _params) }}"
@@ -31,7 +30,6 @@
       paths:
         - "../vars"
   ignore_errors: true
-  tags: crun
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -46,7 +44,6 @@
       paths:
         - "."
   ignore_errors: true
-  tags: crun
 
 - name: prepare directories
   file:
@@ -58,7 +55,6 @@
   loop:
     - { dest: "/usr/local/bin" }
     - { dest: "{{ crun_download.dest | dirname }}" }
-  tags: crun
 
 - name: download archive
   vars:
@@ -73,7 +69,6 @@
     - "{{ crun_download }}"
   register: get_url_result
   until: get_url_result is succeeded
-  tags: crun
 
 - name: unarchive package
   shell: |
@@ -88,7 +83,6 @@
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  tags: crun
 
 - name: prepare files
   file:
@@ -99,4 +93,3 @@
     state: "{{ item.state | default('file') }}"
   loop:
     - { dest: "/usr/local/bin/crun", mode: "0755" }
-  tags: crun
