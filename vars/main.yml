@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _crun_download:
+  "0.15.1":
+    url: "https://github.com/alvistack/containers-crun/releases/download/0.15.1/crun-0.15.1-linux-amd64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.15.1-linux-amd64"
+    checksum: "sha1:6d4057333c8fd71302647a0b674bab76144d0405"
   "0.15":
     url: "https://github.com/alvistack/containers-crun/releases/download/0.15/crun-0.15-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.15-linux-amd64"
