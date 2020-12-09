@@ -72,7 +72,7 @@
 
 - name: unarchive package
   shell: |
-    set -o pipefail
+    set -euo pipefail
     cd /usr/local/bin
     TMP_DIR="$(mktemp -d)" \
       && cp {{ crun_download.dest }} $TMP_DIR/crun \
