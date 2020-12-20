@@ -18,7 +18,7 @@ _crun_download:
   "0.16":
     url: "https://github.com/alvistack/containers-crun/releases/download/0.16/crun-0.16-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.16-linux-amd64"
-    checksum: "sha1:16ac2599214daae994be6c04184120121121df40"
+    checksum: "sha1:e57fe388fed97429d71d8d241f5ee45fb9e8cd1f"
   "0.15.1":
     url: "https://github.com/alvistack/containers-crun/releases/download/0.15.1/crun-0.15.1-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/crun-0.15.1-linux-amd64"
