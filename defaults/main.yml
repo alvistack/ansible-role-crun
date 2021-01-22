@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # crun version.
-crun_version: "0.16"
+crun_version: "0.17"
 
 # crun download details.
 crun_download: "{{ _crun_download[crun_version] }}"
