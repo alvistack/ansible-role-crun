@@ -69,8 +69,8 @@
   loop:
     - "{{ crun_download }}"
   when: file_result is changed
-  register: get_url_result
-  until: get_url_result is succeeded
+  register: result
+  until: result is succeeded
 
 - name: unarchive package
   shell: |
