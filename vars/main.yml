@@ -16,10 +16,10 @@
 
 _crun_download:
   "0.17":
-    url: "https://github.com/alvistack/containers-crun/releases/download/0.17/crun-0.17-linux-amd64"
+    url: "http://github.com/alvistack/containers-crun/releases/download/0.17/crun-0.17-linux-amd64"
     dest: "/var/cache/ansible/e344c6aecfb5347116d37ad42eb3b09a7594da58b69c82dd44853906d4d30557/crun-0.17-linux-amd64"
     checksum: "sha256:e344c6aecfb5347116d37ad42eb3b09a7594da58b69c82dd44853906d4d30557"
   "0.16":
-    url: "https://github.com/alvistack/containers-crun/releases/download/0.16/crun-0.16-linux-amd64"
+    url: "http://github.com/alvistack/containers-crun/releases/download/0.16/crun-0.16-linux-amd64"
     dest: "/var/cache/ansible/01f16b6fa131b5a22507b16ef30e2a14e5484415e18495adf14bfd2dce060e16/crun-0.16-linux-amd64"
     checksum: "sha256:01f16b6fa131b5a22507b16ef30e2a14e5484415e18495adf14bfd2dce060e16"
