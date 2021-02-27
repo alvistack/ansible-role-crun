@@ -19,9 +19,5 @@
   become: true
   tasks:
     - include_role:
-        name: python
-      tags: python
-
-    - include_role:
         name: crun
       tags: crun
