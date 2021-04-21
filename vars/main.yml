@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _crun_download:
+  "0.19.1":
+    url: "http://github.com/alvistack/containers-crun/releases/download/0.19.1/crun-0.19.1-linux-amd64"
+    dest: "/var/cache/ansible/fc5a80ce2601f80af11545db33d1b3e7bfd9ab42ad55b0577afa0366f35e25f9/crun-0.19.1-linux-amd64"
+    sha256sum: "fc5a80ce2601f80af11545db33d1b3e7bfd9ab42ad55b0577afa0366f35e25f9"
   "0.19":
     url: "http://github.com/alvistack/containers-crun/releases/download/0.19/crun-0.19-linux-amd64"
     dest: "/var/cache/ansible/6e7f493bad9c6eb84238f1aa31446a4c2ddde4ec70e1a8b596a65a4e3723f86e/crun-0.19-linux-amd64"
