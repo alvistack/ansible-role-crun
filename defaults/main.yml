@@ -14,8 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# crun release.
+crun_release: "0.19"
+
 # crun version.
-crun_version: "0.19.1"
+crun_version: "{{ _crun_version[crun_release] }}"
 
 # crun download details.
 crun_download: "{{ _crun_download[crun_version] }}"
