@@ -13,25 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_crun_version:
-  "0.20": "0.20.1"
-  "0.19": "0.19.1"
-
-_crun_download:
-  "0.20.1":
-    url: "http://github.com/alvistack/containers-crun/releases/download/0.20.1/crun-0.20.1-linux-amd64"
-    dest: "/var/cache/ansible/20c6d94847a7f2bc693c29b1aa68a9977b5a7f7c2ae5debdb083928b932031c0/crun-0.20.1-linux-amd64"
-    checksum: "20c6d94847a7f2bc693c29b1aa68a9977b5a7f7c2ae5debdb083928b932031c0"
-  "0.20":
-    url: "http://github.com/alvistack/containers-crun/releases/download/0.20/crun-0.20-linux-amd64"
-    dest: "/var/cache/ansible/c7188ca43898abeee28c9a1b2faae7b4354cd64c3c29f9a226e8180ab0c1dd3f/crun-0.20-linux-amd64"
-    checksum: "c7188ca43898abeee28c9a1b2faae7b4354cd64c3c29f9a226e8180ab0c1dd3f"
-  "0.19.1":
-    url: "http://github.com/alvistack/containers-crun/releases/download/0.19.1/crun-0.19.1-linux-amd64"
-    dest: "/var/cache/ansible/fc5a80ce2601f80af11545db33d1b3e7bfd9ab42ad55b0577afa0366f35e25f9/crun-0.19.1-linux-amd64"
-    checksum: "fc5a80ce2601f80af11545db33d1b3e7bfd9ab42ad55b0577afa0366f35e25f9"
-  "0.19":
-    url: "http://github.com/alvistack/containers-crun/releases/download/0.19/crun-0.19-linux-amd64"
-    dest: "/var/cache/ansible/6e7f493bad9c6eb84238f1aa31446a4c2ddde4ec70e1a8b596a65a4e3723f86e/crun-0.19-linux-amd64"
-    checksum: "6e7f493bad9c6eb84238f1aa31446a4c2ddde4ec70e1a8b596a65a4e3723f86e"

@@ -13,12 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# crun release.
-crun_release: "0.20"
-
-# crun version.
-crun_version: "{{ _crun_version[crun_release] }}"
-
-# crun download details.
-crun_download: "{{ _crun_download[crun_version] }}"

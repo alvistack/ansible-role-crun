@@ -13,3 +13,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+_zypper_repository:
+  - name: "Virtualization:containers"
+    repo: "https://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_15.3"
+    state: "present"
+
+_zypper: []
