@@ -14,9 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_zypper_repository:
-  - name: "Virtualization:containers"
-    repo: "https://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_15.2"
-    state: "present"
+_zypper_repository: []
 
 _zypper: []
