@@ -14,20 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_rpm_key:
-  - key: "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/CentOS_7/repodata/repomd.xml.key"
-    fingerprint: "2472D6D0D2F66AF87ABA8DA34D64390375060AA4"
-    state: "present"
+_rpm_key: []
 
-_yum_repository:
-  - file: "devel:kubic:libcontainers:stable"
-    name: "devel_kubic_libcontainers_stable"
-    description: "Stable Releases of Upstream github.com/containers packages (CentOS_7)"
-    baseurl: "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/CentOS_7"
-    enabled: true
-    priority: "2"
-    gpgcheck: true
-    gpgkey: "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/CentOS_7/repodata/repomd.xml.key"
-    state: "present"
+_yum_repository: []
 
 _yum: []
