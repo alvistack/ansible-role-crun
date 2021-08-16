@@ -14,6 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_zypper_repository: []
+_zypper_repository:
+  - name: "home:alvistack"
+    repo: "http://download.opensuse.org/repositories/home:/alvistack/openSUSE_Leap_15.3"
+    state: "present"
 
-_zypper: []
+_zypper:
+  - { state: "latest", name: "crun" }
