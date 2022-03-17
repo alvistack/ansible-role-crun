@@ -19,6 +19,6 @@
   become: true
   tasks:
     - name: crun --version
-      command: crun --version
+      ansible.builtin.command: crun --version
       register: result
       changed_when: result is not succeeded
